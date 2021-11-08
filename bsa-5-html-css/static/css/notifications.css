@@ -1,0 +1,49 @@
+.notifications {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: grid;
+    grid-auto-rows: 5em;
+    grid-gap: 1em;
+    z-index: 10;
+}
+
+.notification {
+    border-radius: 3px;
+    padding-right: 1.3em;
+    opacity: .83;
+    box-shadow: 0 0 2px dimgrey;
+    cursor: pointer;
+    display: grid;
+    grid-template: repeat(2, 1fr) / 2fr 5fr;
+    grid-row-gap: 3px;
+    grid-template-areas:
+            'grid_icon grid_notif_head'
+            'grid_icon grid_notif_text';
+    transition: ease-in-out .35s;
+}
+
+.notification-head {
+    font-weight: bold;
+    color: white;
+    grid-area: grid_notif_head;
+    align-self: end;
+}
+
+.notification-text {
+    color: white;
+    grid-area: grid_notif_text;
+}
+
+.notification-icon {
+    grid-area: grid_icon;
+    align-self: center;
+    justify-self: center;
+}
+
+.notification:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+

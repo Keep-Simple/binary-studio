@@ -1,0 +1,14 @@
+.mainContainer {
+    border-radius: 25px !important;
+    padding: 10px !important;
+    height: fit-content !important;
+}
+
+.submit {
+    background-color: #31a9f3 !important;
+    color: white !important;
+}
+
+.button {
+    border-radius: 30px !important;
+}

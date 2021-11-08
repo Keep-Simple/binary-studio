@@ -1,0 +1,107 @@
+.flip-container {
+    z-index: 6;
+    background-color: transparent;
+    perspective: 2000px;
+}
+
+.flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: all .48s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.flip-container:hover .flip-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-container .back,
+.flip-container .front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-container .back {
+    transform: rotateY(180deg);
+}
+
+.contacts .back i {
+    font-size: 2.2rem;
+    color: dimgrey;
+    margin-right: .35rem;
+    margin-left: .35rem
+}
+
+.contacts .back i:hover {
+    color: royalblue;
+}
+
+.animation-container {
+    position: relative;
+    background-color: transparent;
+    height: 100%;
+    transition: all 0.7s ease-in;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.sandwich-part {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.bs-group .front {
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out .4s;
+    z-index: 2;
+}
+
+.bs-group .back {
+    text-align: left;
+    font-weight: bold;
+    overflow-y: auto;
+    font-size: .9rem;
+}
+
+.bs-group .animation-container:hover .front {
+    margin-left: 100%;
+}
+
+.java .front {
+    transition: ease-in-out .6s;
+    z-index: 2;
+}
+
+.java .animation-container:hover .front {
+    margin-top: 100%;
+}
+
+.php .front {
+    transition: ease-in-out .3s;
+    z-index: 2;
+}
+
+.php .animation-container:hover .front {
+    transform: translate(100%, -100%);
+    margin-bottom: 100%;
+}
+
+.net .front {
+    transition: ease-in-out .3s;
+    z-index: 2;
+}
+
+.net .animation-container:hover .front {
+    transform: translate(100%, 100%);
+    margin-bottom: 100%;
+}

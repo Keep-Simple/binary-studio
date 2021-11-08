@@ -1,0 +1,68 @@
+.bubble {
+    background: #f8f9fa !important;
+    padding: 8px 12px 4px 15px !important;
+    border-radius: 25px !important;
+    margin: .6% 0 .6% 0 !important;
+    width: fit-content !important;
+    max-width: 70%;
+    min-width: 45% !important; ;
+    border: 2px solid rgba(34, 36, 38, .15) !important;
+    box-shadow: 0 1px 2px 0 rgba(34, 36, 38, .15) !important;
+    clear: both !important;
+}
+
+.mine {
+    background: rgba(49, 169, 243, 0.1) !important;
+    text-align: right !important;
+    max-width: 74%;
+    padding: 2px 5px 4px 12px !important;
+
+    float: right !important;
+}
+
+.mine .text {
+    text-align: left !important;
+    margin-top: 4px !important;
+}
+
+.mine .metadata {
+    margin-right: .8rem !important;
+}
+
+.deleteModal {
+    border-radius: 20px !important;
+    padding: 10px !important;
+    width: 226px !important;
+}
+
+.deleteModal * {
+    text-align: center !important;
+    font-weight: 500;
+    font-size: 1.1rem !important;
+}
+
+.deleteModal button {
+    border-radius: 20px !important;
+    padding: 12px !important;
+}
+
+.avatar {
+    overflow: hidden !important;
+    border-radius: 50% !important;
+    box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 1) !important;
+}
+
+.popupIcons {
+    opacity: 0.7 !important;
+    border-radius: 25% !important;
+}
+
+.commonAction {
+    position: absolute !important;
+    top: .8rem !important;
+    right: .6rem !important;
+}
+
+.author {
+    color: rgb(45, 136, 193) !important;
+}

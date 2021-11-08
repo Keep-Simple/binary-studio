@@ -1,0 +1,165 @@
+.body {
+    display: grid;
+    grid-template: 1fr 90px / 1fr;
+}
+
+.content {
+    padding-top: 45px;
+    width: 77%;
+    margin: 0 auto;
+    display: grid;
+    grid-template: repeat(8, minmax(65px, 1fr)) / 2fr 2fr 2.5fr 1.5fr;
+    grid-template-areas:
+    'academy js php php'
+    'academy js php php'
+    'academy js php php'
+    'academy js net events'
+    'qa js net events'
+    'qa js net blog'
+    'qa java net blog'
+    'qa java net contacts';
+}
+
+
+.academy {
+    grid-area: academy;
+}
+
+img.logo {
+    vertical-align: middle;
+    max-width: 70%;
+}
+
+.academy .front {
+    background-color: white;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.qa {
+    grid-area: qa;
+}
+
+.qa .front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #52bf77;
+    font-weight: 500;
+    font-size: 4em;
+    color: white;
+}
+
+.js {
+    grid-area: js;
+}
+
+.js .front {
+    content: "J ";
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: #f7cf69;
+    font-weight: bold;
+    font-size: 5em;
+}
+
+.js .front span {
+    padding-right: .1em;
+}
+
+.java {
+    grid-area: java;
+}
+
+.java .front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e12b4c;
+    font-weight: 500;
+    font-size: 2.3em;
+    color: white;
+}
+
+.php {
+    grid-area: php;
+}
+
+.php .front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8893c0;
+    font-style: oblique;
+    font-size: 4em;
+}
+
+.net {
+    grid-area: net;
+}
+
+.net .front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #642077;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 4em;
+    color: white;
+}
+
+.back {
+    text-align: left;
+    font-weight: bold;
+    overflow-y: auto;
+    font-size: 1.15rem;
+    background-color: #ffffff;
+}
+
+.events {
+    grid-area: events;
+}
+
+.events .front {
+    background-color: #2d99ff;
+}
+
+.blog {
+    grid-area: blog;
+}
+
+.blog .front {
+    background-color: #0443a3;
+}
+
+.contacts {
+    grid-area: contacts;
+}
+
+.contacts .front {
+    background-color: #00265f;
+}
+
+.back > p {
+    padding: 0 0 1rem 1rem;
+}
+
+.contacts .back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.academy .back {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.join-button {
+    padding: 1rem;
+    background-color: royalblue;
+    cursor: pointer;
+}

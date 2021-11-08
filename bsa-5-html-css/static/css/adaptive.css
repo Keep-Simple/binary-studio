@@ -1,0 +1,64 @@
+@media (max-width: 1250px) {
+    .container {
+        font-size: 15px !important;
+    }
+
+    .content {
+        grid-template: repeat(20, minmax(10px, 1fr)) / repeat(12, minmax(20px, 1fr));
+        grid-template-areas: "academy academy academy academy academy js js js js events events events" "academy academy academy academy academy js js js js events events events" "academy academy academy academy academy js js js js events events events" "academy academy academy academy academy js js js js events events events" "academy academy academy academy academy js js js js blog blog blog" "academy academy academy academy academy js js js js blog blog blog" "academy academy academy academy academy js js js js blog blog blog" "academy academy academy academy academy js js js js blog blog blog" "academy academy academy academy academy js js js js contacts contacts contacts" "academy academy academy academy academy js js js js contacts contacts contacts" "java java java java java java php php php php php php" "java java java java java java php php php php php php" "java java java java java java php php php php php php" "java java java java java java php php php php php php" "java java java java java java php php php php php php" "net net net net net net qa qa qa qa qa qa" "net net net net net net qa qa qa qa qa qa" "net net net net net net qa qa qa qa qa qa" "net net net net net net qa qa qa qa qa qa" "net net net net net net qa qa qa qa qa qa";
+    }
+
+    img.nav-logo {
+        grid-column: 2;
+    }
+
+    .nav-menu-wrapper {
+        grid-column: 19;
+    }
+
+    .svg-container {
+        grid-column: 18;
+        justify-self: start;
+    }
+}
+
+@media (max-width: 800px) {
+    .svg-container {
+        grid-column: 17;
+    }
+}
+
+
+@media (max-width: 615px) {
+    .container {
+        font-size: 13px !important;
+    }
+
+    .content {
+        grid-template: repeat(17, minmax(70px, 1fr)) / repeat(7, minmax(35px, 1fr));
+        grid-template-areas: "academy academy academy academy events events events" "academy academy academy academy events events events" "academy academy academy academy events events events"  "js js js js js js js" "js js js js js js js" "java java java java java java java" "java java java java java java java" "php php php php php php php" "php php php php php php php" "qa qa qa qa qa qa qa" "qa qa qa qa qa qa qa" "net net net net net net net" "net net net net net net net" "blog blog blog blog blog blog blog" "blog blog blog blog blog blog blog" "blog blog blog blog blog blog blog" "contacts contacts contacts contacts contacts contacts contacts";
+    }
+
+    img.nav-logo {
+        grid-column: 2;
+    }
+
+    .nav-menu-wrapper {
+        grid-column: 19;
+    }
+
+    .events .front,
+    .blog .front,
+    .contacts .front {
+        font-size: 24px;
+        color: white;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blog .front::before {
+        content: "Grab News from\00a0";
+    }
+}

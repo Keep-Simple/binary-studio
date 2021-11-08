@@ -1,0 +1,20 @@
+{
+  "name": "bsa-5-html-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Keep-Simple@bitbucket.org/Keep-Simple/bsa-5-html-css.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/Keep-Simple/bsa-5-html-css#readme",
+  "dependencies": {
+    "static": "^2.0.0"
+  }
+}
